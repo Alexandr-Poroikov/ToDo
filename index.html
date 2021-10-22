@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ru">   		<!-- или en -->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+	<!-- вставить иконку -->
+	<link rel="shortcut icon" href="#" type="image/x-icon">  	 
+	<!-- вставить ключевые слова SEO -->
+	<meta content="" name="description">						
+    <meta content="" name="author">
+	<title>TO DO</title>
+	<!-- Подключаем normalize файл -->
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+
+	<!-- Подключаем наш файл -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+	<div class="wrapper">
+	<!-- === Filter / search === -->
+		<div class="box filter">
+			<h2 class="filter__title">Filter</h2>
+			<input type="filter__text" class="filter__search js-inp" placeholder="filter">
+			<ul class="filter__list js-list">
+				<li class="filter__item">Moskow</li>
+				<li class="filter__item">Krasnodar</li>
+				<li class="filter__item">Ufa</li>
+				<li class="filter__item">Omsk</li>
+				<li class="filter__item">Piter</li>
+				<li class="filter__item">Kiev</li>
+				<li class="filter__item">Kraken</li>
+			</ul>
+		</div>
+	<!-- === Photo === -->
+		<div class="box photo">
+			<h2 class="photo__title">Add Photos</h2>
+			<div class="photo__subtitle">
+				My photos by URL:	
+			</div>
+			<input type="text" class="photo__url js-url" placeholder="http://"> 
+			<span class="photo__text js-text">*please press "enter"</span>
+			<ul class="photo__list js-listPhoto">
+				
+			</ul>
+		</div>
+	<!-- === Widget Click === -->
+		<div class="box counter">
+			<h2 class="counter__title">Click Counter</h2>
+			<div class="counter__widget js-click">Click counter: <span class="js-counter"></span></div>
+			<button class="counter__but js-but">clear</button>
+		</div>
+	<!-- === To Do === -->
+		<div class="box todo">
+			<h2 class="todo__title">TO DO</h2>
+			<input type="text" class="todo__input js-input" placeholder="add">
+			<button  class="todo__button js-button">добавить</button>
+			<ul class="todo__container js-container">
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Подключаем наш файл -->
+	<script src="js/main.js"></script>
+	<script></script>
+</body>
+</html>

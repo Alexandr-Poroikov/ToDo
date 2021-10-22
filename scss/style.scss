@@ -1,0 +1,202 @@
+.wrapper{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 30px;
+}
+// (start) style for all wrapper
+.box{
+	position: relative;
+	width: 270px;
+	padding: 10px 25px 15px;
+	border: 1px solid #00CED1;
+	border-radius: 20px;
+	background-color: #e3ffff;
+    box-shadow: 3px 2px 2px 2px #808080;
+}
+// (end) style for all wrapper
+
+//=== Filter / search ===
+.filter{
+	&__title{
+		font-size: 18px;
+		color: #808080;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	&__search{
+		padding: 6px;
+		border-radius: 10px;
+		&::placeholder{
+			color: rgba(#000, 0.5);
+		}
+		&:focus{
+			outline: none;
+			box-shadow: 0 1px 1px 1px rgba(#000, 0.5);
+		}
+	}
+	&__list{
+		padding-left: 16px;
+	}
+	&__item{
+		list-style-type: circle;
+	}
+}
+
+// === Photo ===
+.photo{
+	&__title{
+		font-size: 18px;
+		color: #808080;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	&__subtitle{
+		margin-bottom: 10px;
+	}
+	&__text{
+		visibility: hidden;
+		font-size: 12px;
+		text-align: center;
+		color: #808080;
+	}
+	&__list li img{
+		width: 100px;
+		object-fit: cover;
+	}
+	&__url{
+		padding: 4px;
+		border-radius: 10px;
+		color: rgb(90,90,90);
+		&::placeholder{
+			color: rgba(#000, 0.5);
+		}
+		&:focus{
+			outline: none;
+			box-shadow: 0 1px 1px 1px rgba(#B0E0E6, 0.5);
+		}
+	}	
+}
+.js-visible{
+	visibility: visible;
+}
+
+// === Widget Click ===
+.counter{
+	display: flex;
+	flex-direction: column;
+	&__title{
+		font-size: 18px;
+		color: #808080;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	&__widget{
+		width: 100%;
+		flex: 1 0 auto;
+		margin-bottom: 5px;
+		& span{
+			font-size: 24px;
+			font-weight: 500;
+			color: #ad0d01;
+		}
+	}	
+	&__but{
+		padding: 4px 6px;
+		border: 1px solid #000;
+		border-radius: 3px;
+		transition: background-color .4s;
+		&:hover{
+			background-color: #a9f7ac;
+		}
+	}
+}
+
+// === To Do ===
+.todo{
+	&__title{
+		font-size: 18px;
+		color: #808080;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	&__input{
+		width: 100%;
+		margin-bottom: 5px;
+		border-radius: 4px;
+		padding: 2px;
+		&:focus{
+			outline: none;
+			box-shadow: 0 1px 1px 1px rgba(#B0E0E6, 0.5);
+			border: 2px solid #71984b;
+		}
+		&::placeholder{
+			color: rgba(#000, 0.5);
+			padding: 0 4px;
+		}
+	}
+	&__button{
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 2px;
+	}
+	&__item{
+		position: relative;
+		margin-bottom:4px;
+		border-bottom: 2px solid #00CED1;
+	}
+	&__but{
+		position: absolute;
+		right: 0;
+		top:0;
+		width: 36px;
+		height: 94%;
+		border-radius: 25%;
+		border: 1px solid #00CED1;
+	}
+	&__checkbox{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		position: absolute;
+		&:focus + .todo__label:after {
+		  border: 2px solid #000;
+		}
+		&:checked + label:before{
+			display: inline-block;
+		}
+	}
+	&__label{
+		position: relative;
+		padding-left: 22px;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #000;
+			border-radius: 2px;
+		}
+		&:before{
+			content: '';
+			display: none;
+			position: absolute;
+			left: 0;
+			top: -4px;
+			width: 20px;
+			height: 20px;
+			background: url('../images/mark.png') no-repeat center;
+			background-size: cover;
+		}
+	}
+}
+.import{
+	color: red;
+	font-size: 18px;
+}
+
