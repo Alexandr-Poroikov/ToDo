@@ -48,6 +48,8 @@ function photo(){
 			arrayLS.push(dataLS);
 			//	add this data on the page
 			createEls();
+            // hide "please enter"
+            textForInput.classList.remove('js-visible');
 			// save data in local Storage
 			localStorage.setItem('gallery', JSON.stringify(arrayLS));
 			// clear input
