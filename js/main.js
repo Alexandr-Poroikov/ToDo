@@ -96,9 +96,9 @@ function photo(){
 	// show "please enter"
 	function showText(){
 		if(input.value !== ''){
-			textForInput.classList.add('js-visible')
+			textForInput.classList.add('js-visible');
 		}else{
-			textForInput.classList.remove('js-visible')
+			textForInput.classList.remove('js-visible');
 		}
 	}
 }
